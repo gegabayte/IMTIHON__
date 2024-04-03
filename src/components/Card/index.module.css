@@ -1,0 +1,54 @@
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+.cardDark {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    cursor:pointer;
+    transition: all 0.5s;
+    background: #272935;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card:hover , .cardDark:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.001);
+}
+.cardImge {
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cardTitle {
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-top: 33px;
+    color:  rgb(57, 78, 106);
+}
+.cardTitleDark {
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-top: 33px;
+    color: #FFF;
+    
+}
+.priceDark {
+    margin-top: 30px;
+    color: #bb86fc;
+}
+.price {
+    margin-top: 30px;
+     color: #00224D;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}

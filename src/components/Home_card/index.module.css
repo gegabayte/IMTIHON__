@@ -1,0 +1,125 @@
+.card {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block2 img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+.block2 {
+    width: 500px;
+    display: flex;
+    background: #000;
+    justify-content: start;
+    align-items: center;
+    height: 470px;
+    gap: 15px;
+    overflow: auto;
+    border-radius: 15px;  
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.block2 .img1 {
+    margin-left: 10px;
+}
+.block2 .img2 {
+    margin-right: 10px;
+}
+.card .block1 .sar {
+    width: 480px;
+    font-size: 50px;
+    color: rgb(57, 78, 106);
+    
+}
+
+.card .block1 .sr {
+    width: 480px;
+    font-size: 50px;
+    color: white;
+    
+}
+
+.card .block1 .textDark {
+    width: 480px;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.card .block1 .text {
+    width: 480px;
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.card .btn {
+    color: white;
+    background: blue;
+    opacity: 0.6;
+    padding: 12px 15px;
+    border: none;
+    font-size: 10px;
+    margin-top: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+.card .btnl {
+    color: white;
+    background: #bb86fc;
+    opacity: 0.6;
+    padding: 12px 15px;
+    border: none;
+    font-size: 10px;
+    margin-top: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+.card .btn:hover {
+    background: blue;
+    opacity: 10;
+}
+.card .btnl:hover {
+    background: #bb86fc;
+    opacity: 10;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .block2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card .block1 .sr {
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+    }
+    .card .block1 .sar {
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+    }
+    .card .block1 .text {
+        text-align: center;
+        width: 350px;
+    }
+    .card .block1 .textDark {
+        display: flex;
+        width: 350px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .btnl {
+        text-align: center;
+    }
+}

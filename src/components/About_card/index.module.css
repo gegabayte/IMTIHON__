@@ -1,0 +1,49 @@
+.card .texth1 {
+    font-size: 50px;
+    color:  rgb(57, 78, 106);
+}
+.card .texth1Dark {
+    font-size: 50px;
+    color: #fff;
+}
+.card .Btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+} 
+.card .btn {
+    font-size: 45px;
+    padding: 8px 15px;
+    color: #fff;
+    background: #3498db;
+    border: none;
+    border-radius: 8px;
+}
+.card .btnDark {
+    font-size: 45px;
+    padding: 8px 15px;
+    color: #000;
+    background: #bb86fc;
+    border: none;
+    border-radius: 8px;
+}
+.card .textp {
+    font-size: 16px;
+    margin-top: 25px;
+}
+.card .textpDark {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #fff;
+}
+@media screen and (max-width: 400px) {
+    .card h1 {
+        font-size: 30px;
+    }
+    .card button {
+        font-size: 26px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}
