@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 function Data() {
     const params = useParams();
     const locataion = useLocation();
+    console.log(locataion);
 
     // useEffect(() => {
     //   fetch(`https://react-vite-comfy-store-v2.netlify.app/assets/index-d2914d39.js`, {

@@ -34,7 +34,7 @@ return (
                     {
                         !loading && cards.map((el, index) => {
                             return (
-                                <Card  key={index} card={el.attributes}></Card>
+                                <Card  key={index} card={el.attributes} id = {el.id}></Card>
                             )
                         })
                     }
