@@ -1,0 +1,144 @@
+.filter {
+    margin: 100px auto;
+    background-color: rgb(240, 246, 255);
+    max-width: 1000px;
+    padding: 32px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.filterDark {
+    background-color: #121212;
+    margin: 100px auto;
+    max-width: 1000px;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+
+.filter_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.filter_search{
+    width: 200px;
+    flex-direction: column;
+}
+
+select {
+    cursor: pointer;
+}
+
+ .label {
+    color: rgb(57, 78, 106);
+    margin-bottom: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ .labeDark {
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 16px
+}
+
+.filter_search input {
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.filter_top_select {
+    width: 200px;
+    flex-direction: column;
+}
+
+.filter_top_select label {
+    color: rgb(57, 78, 106);
+    margin-bottom: 10px;
+}
+
+.filter_top_select select {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.filter_buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.sum {
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+}
+
+.sum label {
+    color: rgb(57, 78, 106);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.checkbox {
+    width:  200px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.checkbox label {
+    text-align: center;
+    color: rgb(57, 78, 106);
+    margin-right: 50px;
+}
+
+.buttons {
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.search {
+    width: 300px;
+    padding: 5px 72px;
+    border: 1px solid rgb(5, 122, 255);
+    background-color: rgb(5, 122, 255);
+    color: rgb(240, 246, 255);
+    border-radius: 10px;
+}
+
+.reset {
+    width: 300px;
+    padding: 5px 72px;
+    border: 1px solid rgb(193, 73, 173);
+    background-color: rgb(193, 73, 173);
+    color: rgb(240, 246, 255);
+    border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .buttons {
+        width: 100px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

@@ -4,6 +4,7 @@
     gap: 200px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
 }
 .header__barr {
     display: none;

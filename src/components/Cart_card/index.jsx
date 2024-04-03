@@ -22,7 +22,6 @@ function Cart_card() {
       <div className="card">
         <h1 className={dataTheme.theme == 'light' ? styles.text1 : styles.titleDark}>{t('shopping Cart')}</h1>
         <div className={styles.Bit__team}>
-
           <div className={styles.card__page}>
             <div>
               <img width={200} height={200} src={img1} alt="" />
@@ -47,8 +46,6 @@ function Cart_card() {
               <span className={dataTheme.theme == 'light' ? styles.price : styles.priceDark}>$179.99</span>
             </div>
           </div>
-
-
           <div className={dataTheme.theme == 'light' ? styles.card__price_team : styles.card__price_teamDark}>
             <div className={dataTheme.theme == 'light' ? styles.priceTee : styles.priceTeeDark}>
               <h4 className={dataTheme.theme == 'light' ? styles.TextColor : styles.TextColorDark}>Subtotal</h4>

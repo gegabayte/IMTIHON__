@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 import Card from '../../components/Card'
 import {PuffLoader} from 'react-spinners'
+import ProductsForm from '../../components/ProductsForm';
+import { useNavigate } from 'react-router-dom';
 import './index.css'
 
 function Products () {
+    const navigate = useNavigate()
     const [cards, setCards] = useState([]);
     const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
+useEffect(() => {
         setLoading(true)
         fetch(`https://strapi-store-server.onrender.com/api/products`, {
             method: "GET"
@@ -27,6 +29,7 @@ return (
         <>
 
             <div className='container'>
+                <ProductsForm></ProductsForm>
                 <div className='section__container'>
                     {
                         loading && <PuffLoader color="#FFC94A"size={150}/>
@@ -34,7 +37,7 @@ return (
                     {
                         !loading && cards.map((el, index) => {
                             return (
-                                <Card  key={index} card={el.attributes} id = {el.id}></Card>
+                                <Card key={index} card={el.attributes}></Card>
                             )
                         })
                     }

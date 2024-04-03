@@ -1,26 +1,35 @@
-import { useParams, useLocation } from 'react-router-dom'
+import { useParams, useLocation, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react';
 import './index.css'
-import { useEffect } from 'react';
-function Data() {
-    const params = useParams();
-    const locataion = useLocation();
-    console.log(locataion);
 
-    // useEffect(() => {
-    //   fetch(`https://react-vite-comfy-store-v2.netlify.app/assets/index-d2914d39.js`, {
-    //     method: "GET"
-    //   })
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     console.log(data);
-    //   })
-    //   .cath(err => {
-    //     console.log(err);
-    //   })
-    // }, [])
-    
+function Data() {
+  const [product, setProduct] = useState({});
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (id) {
+      fetch(`https://strapi-store-server.onrender.com/api/products/${id}`,{
+        method: "GET"
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data.data);
+          setProduct(data.data)
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    } else {
+      navigate("/")
+    }
+  }, [id])
+
+
   return (
-    <div>Data</div>
+    <>
+       
+    </>
   )
 }
 

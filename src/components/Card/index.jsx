@@ -1,21 +1,23 @@
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../../App";
 import styles from './index.module.css'
 
-function Card (props) {{}
+function Card(props) {
+    { }
     const dataTheme = useContext(ThemeContext)
-    const {price, image, title , id } = props.card;
+    const { price, image, title } = props.card;
+    const { id } = props.card;
     const navigate = useNavigate();
 
 
-    function handleRedirect () {
+    function handleRedirect() {
         navigate(`/data/${id}`)
     }
     return (
         <>
-            <div>
-                <div onClick={handleRedirect} className={dataTheme.theme == 'light' ? styles.card : styles.cardDark}>
+            <div  onClick={handleRedirect}>
+                <div className={dataTheme.theme == 'light' ? styles.card : styles.cardDark}>
                     <img className={styles.cardImge} width={300} height={180} src={image} alt="" />
                     <h1 className={dataTheme.theme == 'light' ? styles.cardTitle : styles.cardTitleDark}>{title}</h1>
                     <h2 className={dataTheme.theme == 'light' ? styles.price : styles.priceDark}>${price}</h2>
