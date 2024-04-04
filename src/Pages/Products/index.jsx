@@ -16,6 +16,7 @@ useEffect(() => {
         })
             .then((res) => res.json())
             .then(data => {
+                console.log(19, data.data);
                 setCards(data.data)
             })
             .catch((err) => {
@@ -37,7 +38,7 @@ return (
                     {
                         !loading && cards.map((el, index) => {
                             return (
-                                <Card key={index} card={el.attributes}></Card>
+                                <Card key={index} elId = {el.id} card={el.attributes}></Card>
                             )
                         })
                     }

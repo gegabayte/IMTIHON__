@@ -42,7 +42,7 @@ function Home() {
             {
               !loading && cards.map((el, index) => {
                 return (
-                  <Card key={index} card={el.attributes}></Card>
+                  <Card elId = {el.id}  key={index} card={el.attributes}></Card>
                 )
               })
             }

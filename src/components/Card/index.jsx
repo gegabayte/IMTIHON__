@@ -7,12 +7,11 @@ function Card(props) {
     { }
     const dataTheme = useContext(ThemeContext)
     const { price, image, title } = props.card;
-    const { id } = props.card;
+    const { elId } = props;
     const navigate = useNavigate();
 
-
     function handleRedirect() {
-        navigate(`/data/${id}`)
+        navigate(`/data/${elId}`)
     }
     return (
         <>

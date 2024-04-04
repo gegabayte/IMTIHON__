@@ -33,16 +33,20 @@ select {
     cursor: pointer;
 }
 
- .label {
+.filter .label {
     color: rgb(57, 78, 106);
     margin-bottom: 15px;
     font-size: 16px;
     cursor: pointer;
 }
- .labeDark {
-    color: #FFF;
-    margin-bottom: 10px;
-    font-size: 16px
+.filterDark .labelDark {
+   color: #FFF;
+   margin-bottom: 10px;
+   font-size: 16px
+}
+input, select {
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .filter_search input {
@@ -76,15 +80,18 @@ select {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    gap: 40px;
+    gap: 100px;
     cursor: pointer;
     flex-wrap: wrap;
 }
 
 .sum {
+    position: relative;
+    left: -100px;
     width: 200px;
     flex-direction: column;
     display: flex;
+
 }
 
 .sum label {
@@ -140,5 +147,13 @@ select {
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
+    }   
+    .sum {
+        position: relative;
+        left: -20px;
+        width: 200px;
+        flex-direction: column;
+        display: flex;
+    
     }
 }
