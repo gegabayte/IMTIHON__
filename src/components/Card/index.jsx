@@ -4,7 +4,6 @@ import { ThemeContext } from "../../App";
 import styles from './index.module.css'
 
 function Card(props) {
-    { }
     const dataTheme = useContext(ThemeContext)
     const { price, image, title } = props.card;
     const { elId } = props;
